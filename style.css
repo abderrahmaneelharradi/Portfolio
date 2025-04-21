@@ -113,7 +113,7 @@ nav a.active{
         background-color: black;
     }
 
-    .home.home-content h1{
+    .home-content h1{
         font-size: 6rem;
         font-weight: 700;
         line-height: 1.3;
@@ -137,12 +137,18 @@ nav a.active{
         position: relative;
         width: 32vw;
         border-radius: 50%;
-        box-shadow: 0 0 25px solid #00308F;
+        box-shadow: 0 0 25px #00308F;
         cursor: pointer;
-        transition: 0.2s linear;
     }
 
     .home-img img:hover{
+        transform: scale(1.01);
+        filter: drop-shadow(0 0 25px #00308F);
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .home-content p {
         font-size: 1.8rem;
         font-weight: 500;
     }
@@ -163,6 +169,8 @@ nav a.active{
     }
 
     .social-icon a:hover{
+        color: white;
+        background: #00308F;
         transform: scale(1.3)translateY(-5px);
         box-shadow: 0 0 25px #00308F;
     }
@@ -199,7 +207,7 @@ nav a.active{
     }
 
     .typing-text span::before{
-        content: "Web Security";
+        content: "Software Developer";
         color: #00308F;
         animation: words 20s infinite;
     }
@@ -222,12 +230,28 @@ nav a.active{
     }
     
     @keyframes words{
-        0%,20%{
+        0%,40%{
             content: "Fullstack Developer";
         }
-        21%,40%{
-        content:"Web Designer";
+        41%,60%{
+            content:"Web Designer";
         }
+        61%,100%{
+            content: "Software Developer";
+        }
+
+    }
+    @keyframes typing {
+        10%, 25%,
+        40%, 55%,
+        80%, 95% {
+            width: 0;
+        }
+        5%, 30%,
+        35%, 60%,
+        75%, 90% {
+            width: calc(100% + 8px);
+        } 
     }
 
     @media(max-width:995px){
@@ -250,4 +274,68 @@ nav a.active{
         }
     }
 
+    @media (max-width:1000px) {
+        .home {
+            flex-direction: column;
+            margin: 5rem 4rem ;
+        }
+        .home .home-content h3 {
+            font-size: 2.5rem;
+        }
+        .home-content h1 {
+            font-size: 5rem;
+        }
+        .home-img img {
+            width: 70vw;
+            margin-top: 4rem;
+        }
+    }
+    /* Service Section  */
+
+    .services {
+        background: #00308F;
+    }
+
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .service-box {
+        background-color: #00308F;
+        height: 250px;
+        border-radius: 3rem;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
     
+    .service-box:hover {
+        background: transparent;
+        color: white;
+        transform: scale(1.03);
+    }
+
+    .service-box .service-info {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-height: 200px;
+        justify-content: center;
+        align-items: center;
+        padding: 5em;
+    }
+
+    .service-info h4 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .service-info p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        max-height: 100px;
+        margin: auto;
+    }
