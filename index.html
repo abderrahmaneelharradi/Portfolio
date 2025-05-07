@@ -3,80 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Portfolio</title>
-
-    <!-- Including CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <header>
-       <a href="#" class="logo">Abderrahmane </a>
-
+       <a href="#" class="logo">Abderrahmane</a>
        <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+           <a href="#" class="active">Home</a>
+           <a href="#services">Services</a>
+           <a href="#skills">Skills</a>
+           <a href="#projects">Projects</a>
+           <a href="#contact">Contact</a>
        </nav>
     </header>
 
-    <!-- Home section -->
-    <section class="home" >
-        <div class="home-img" >
-           <img src="31.jpg" alt="">
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-img">
+            <img src="31.jpg" alt="">
         </div>
         <div class="home-content">
-           <h1>Hi, it's <span class="name">Abderrahmane</span></h1>
-           <h3 class="typing-text">I'm a <span></span></h3>
-           <p>I’m a passionate full-stack developer with a strong drive to learn and innovate in the ever-evolving world of technology. 
-            Thriving in dynamic environments, I enjoy collaborating with others and leveraging my interpersonal skills to deliver impactful solutions. 
-            In my free time, I dive deeper into IT advancements, constantly expanding my knowledge and staying ahead of the curve. 
-            Technology excites me, and I’m always eager to embrace new challenges and opportunities.</p>
-        <div class="social-icon">
-            <a href="https://www.linkedin.com/in/abderrahmane-elharradi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/abderrahmaneelharradi" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://x.com/citizennthree" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/abderr1hm1n/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <a href="#" class="btn">Hire me</a>
+            <h1>Hi, it's <span class="name">Abderrahmane</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I’m a passionate full-stack developer with a strong drive to learn and innovate in the ever-evolving world of technology. 
+            Thriving in dynamic environments, I enjoy collaborating with others and leveraging my interpersonal skills to deliver impactful solutions.</p>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/abderrahmane-elharradi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/abderrahmaneelharradi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/citizennthree" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/abderr1hm1n/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
         </div>
     </section>
 
-    <!-- Service Section -->
-     <section class="services" id="services">
+    <!-- Services Section -->
+    <section class="services" id="services">
         <h2 class="heading">Services</h2>
-
         <div class="services-container">
-
             <div class="service-box">
                 <div class="service-info">
                     <h4>Fullstack Developer</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quae veritatis odit atque eum nulla illo, 
-                        dignissimos doloribus architecto esse sunt porro autem, sapiente voluptatem nemo minima, ex iusto ullam!</p>
+                    <p>Building scalable and modern web applications from frontend to backend using the latest technologies.</p>
                 </div>
             </div>
-
             <div class="service-box">
                 <div class="service-info">
                     <h4>Web Designer</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quae veritatis odit atque eum nulla illo, 
-                        dignissimos doloribus architecto esse sunt porro autem, sapiente voluptatem nemo minima, ex iusto ullam!</p>
+                    <p>Creating responsive, visually appealing interfaces with attention to user experience and detail.</p>
                 </div>
             </div>
-
             <div class="service-box">
                 <div class="service-info">
                     <h4>Software Developer</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quae veritatis odit atque eum nulla illo, 
-                        dignissimos doloribus architecto esse sunt porro autem, sapiente voluptatem nemo minima, ex iusto ullam!</p>
+                    <p>Designing and implementing efficient software solutions tailored to business needs.</p>
                 </div>
             </div>
-
         </div>
-     </section>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h4>Frontend</h4>
+                <p>HTML, CSS, JavaScript, React, Tailwind</p>
+            </div>
+            <div class="skill">
+                <h4>Backend</h4>
+                <p>Node.js, Express.js, MongoDB, SQL</p>
+            </div>
+            <div class="skill">
+                <h4>Tools & Platforms</h4>
+                <p>Git, GitHub, Docker, Linux, VS Code</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h4>Portfolio Website</h4>
+                <p>Responsive personal website showcasing my skills, projects, and contact information.</p>
+            </div>
+            <div class="project-card">
+                <h4>Task Manager App</h4>
+                <p>Web app with login, CRUD tasks, and backend REST API. Built with React and Node.js.</p>
+            </div>
+            <div class="project-card">
+                <h4>Blog Platform</h4>
+                <p>Blog platform with markdown support and admin panel using Express and MongoDB.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2>
+        <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
 </body>
 </html>
